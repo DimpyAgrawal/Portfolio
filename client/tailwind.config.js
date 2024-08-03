@@ -18,6 +18,7 @@ export default {
       fontFamily: {
         sans: ['"Open Sans"', 'sans-serif'],
         roboto: ['"Roboto"', 'sans-serif'],
+        poppins:["Poppins", "sans-serif"],
       },
       colors: {
         'custom-bg': '#0A101B',
