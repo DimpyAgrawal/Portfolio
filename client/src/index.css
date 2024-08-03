@@ -1,3 +1,172 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@keyframes example {
+    0% {
+        background-color: ;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: ;
+        left: 200px;
+        top: 0px;
+    }
+}
+
+.home-animarion {
+    @apply relative;
+    animation-name: example;
+    animation-duration: 4s;
+
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.2);
+    width: 50%;
+}
+.card2{
+  box-shadow: 20px 20px rgba(0, 0, 0, 0.2);
+  width:50%
+}
+@keyframes rotateY {
+    0%, 100% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(150deg);
+    }
+  }
+  
+  /* .tech {
+    animation: rotateY 4s  ease-in-out 1;
+  } */
+
+  .tech:hover {
+    animation: rotateY 4s ease-in-out 2;
+    animation-iteration-count: 2;
+  }
+
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .heading-bounce {
+    display: inline-block; /* Ensures the animation applies to the element correctly */
+    animation: bounce 2s;
+  }
+  
+  .heading-bounce:hover {
+    animation: bounce 2s; /* Ensures the animation replays on hover */
+  }
+  
+  
+
+  @keyframes typing {
+    0% { width: 0; }
+    50%, 100% { width: 100%; }
+  }
+  
+  @keyframes blinkCaret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgb(223, 210, 210); }
+  }
+  
+  .heading-typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .11em solid whitesmoke; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation-name: typing, blinkCaret;
+    animation-duration: 6s, .75s;
+    animation-timing-function: steps(20, end), step-end;
+    animation-iteration-count: 100, infinite;
+  }
+  
+  
+
+  @keyframes zoomIn {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  .heading-zoom {
+    animation: zoomIn 1s ease-in-out;
+  }
+  
+  @keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  .heading-slide-left {
+    animation: slideInLeft 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .heading-fade {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .navbar {
+    animation: slideIn 1s ease-out;
+  }
+  
+  .multi-transition {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .multi-transition:hover {
+    transform: scale(1.1) rotate(5deg);
+    background-color: rgb(24, 44, 44);
+
+  }
+  
+  .rotate {
+    transition: transform 0.3s ease;
+  }
+  
+  .rotate:hover {
+    transform: rotate(15deg);
+  }
+  .scale {
+    transition: transform 0.3s ease;
+  }
+  
+  .scale:hover {
+    transform: scale(1.1);
+  }
+  
+ 

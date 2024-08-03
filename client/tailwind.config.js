@@ -16,7 +16,8 @@ export default {
         '14px': '14px',
       },
       fontFamily: {
-        sans: [ 'Roboto', 'Arial', 'Helvetica', 'sans-serif'],
+        sans: ['"Open Sans"', 'sans-serif'],
+        roboto: ['"Roboto"', 'sans-serif'],
       },
       colors: {
         'custom-bg': '#0A101B',

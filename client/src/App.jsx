@@ -5,26 +5,18 @@ import Home from './component/Home';
 import About from './component/About';
 import Projects from './component/Projects';
 import Technologies from './component/Technologies';
+import C from './component/C';
+import './App.css';
 
 function App() {
   return (
-    <div>
-      {/* <BrowserRouter>
-
-        <Navbar />
-        <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='/about' element={<About />} />
-          <Route exact path='/projects' element={<Projects />} />
-          <Route exact path='/technologies' element={<Technologies />} />
-        </Routes>
-      </BrowserRouter> */}
-
+    <div className='example  overflow-x-clip'>
       <Navbar/>
       <Home/>
       <Projects/>
       <Technologies/>
       <About/>
+      {/* <C/> */}
 
     </div>
   )
