@@ -22,8 +22,8 @@ function Technologies() {
 
         <div className='mt-10 sm:mt-2 tech cursor-pointer'  data-aos="flip-left">
           <img className='h-[70px]' src="https://companieslogo.com/img/orig/MDB.D-9b200438.png?t=1648915248" alt="" />
-          <h2 className='text-2xl sm:text-3xl mt-5 font-semibold text-custom-white'>Black-End</h2>
-          <p className='mt-5'>Experience with <br /> Node and Databses</p>
+          <h2 className='text-2xl sm:text-3xl mt-5 font-semibold text-custom-white'>Back-End</h2>
+          <p className='mt-5'>Experience with <br /> Node and Databases</p>
         </div>
 
         <div className='mt-10 sm:mt-2 tech cursor-pointer'  data-aos="flip-left">
